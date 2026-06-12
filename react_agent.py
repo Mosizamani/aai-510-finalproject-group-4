@@ -230,7 +230,8 @@ TOOL_INFOS: list[ToolInfo] = [
     #     exec_fn=_vector_search_exec,
     # ),
 ]
-# Add more ToolInfo entries here if needed
+
+# Add Unity Catalog functions
 UC_TOOL_NAMES = ["group4.default.all_ai_applications_rating", 
                  "group4.default.fetch_review_theme_category", 
                  "group4.default.fetch_review_contents"
