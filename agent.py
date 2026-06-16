@@ -43,6 +43,7 @@ You have access to one tool:
 - group4__default__all_ai_applications_rating: list all AI applications and their average rating.
 - group4__default__fetch_review_theme_category: fetch all review theme categories.
 - group4__default__fetch_review_contents: retrieve review content for a specific category, with an optional keyword filter, while limiting the number of records returned per request.
+- group4__default__find_most_used_words_by_model: Finds the 10 most frequently used keywords in the review texts from ai_reviews_embeddings table, grouped by model.
 
 
 For every user question, follow this process:
@@ -233,7 +234,8 @@ TOOL_INFOS: list[ToolInfo] = [
 # Add more ToolInfo entries here if needed
 UC_TOOL_NAMES = ["group4.default.all_ai_applications_rating", 
                  "group4.default.fetch_review_theme_category", 
-                 "group4.default.fetch_review_contents"
+                 "group4.default.fetch_review_contents",
+                 "group4.default.find_most_used_words_by_model"
                  ]
 
 uc_toolkit = UCFunctionToolkit(function_names=UC_TOOL_NAMES)
