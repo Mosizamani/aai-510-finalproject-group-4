@@ -32,7 +32,7 @@ from unitycatalog.ai.core.base import get_uc_function_client
 ############################################
 # LLM endpoint — replaced by notebook cell
 ############################################
-LLM_ENDPOINT_NAME = "__LLM_ENDPOINT__"
+LLM_ENDPOINT_NAME = "databricks-gpt-oss-120b"
 
 SYSTEM_PROMPT = """You are an AI Review Analysis Assistant specializing in generative AI application reviews.
 
